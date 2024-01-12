@@ -1,0 +1,39 @@
+/*       
+Colour reference #241           
+blue-grey #2C3E50
+red #E74C3C
+ice blue #ECF0F1
+blue #3498DB
+darker blue #2980B9
+*/
+
+body{
+    /* https://fonts.google.com/specimen/Inter?query=inter */
+    font-family: 'Inter', sans-serif;
+}
+
+.Navigation{
+    width: 100px;
+    padding: 10px;
+    margin:10px;
+    background: #2C3E50;
+    text-align: center;
+    color:#ECF0F1;
+    border: 10px;
+    border-radius:20px;
+    text-decoration: none;
+}
+/* Changes that occur on hover */
+.Navigation:hover{
+    background: #3498DB;
+    /* box-shadow: 5px 5px 5px grey; looks lame */
+}
+
+/* .Navigation: */
+
+.Navigation_Bar{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    background-color: #ECF0F1;
+}
