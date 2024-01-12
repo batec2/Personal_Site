@@ -5,35 +5,86 @@ red #E74C3C
 ice blue #ECF0F1
 blue #3498DB
 darker blue #2980B9
+
+
 */
+/* https://fonts.google.com/specimen/Inter?query=inter */
+/*Variables with a global scope */
+:root {
+    /* pallet 1 */
+    --blue-grey: #2c3e50;
+    --red-orange: #E74C3C;
+    --ice-blue: #ECF0F1;
+    --lighter-blue: #3498DB;
+    --darker-blue: #2980B9;
+    /* pallet 2 */
+    --dark-red: #200E0B;
+    --dark-grey: #333634;
+    --lighter-grey: #585958;
+    --light-grey: #D4D6D6;
+    --red: #DC1A00;
+}
 
 body{
-    /* https://fonts.google.com/specimen/Inter?query=inter */
     font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--ice-blue);
+    background-color: black;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.title-container {
+    padding: 40%;
+    padding-bottom: 30%;
+    animation: fadeIn 10s;
+    text-align: center;
 }
 
 .Navigation{
     width: 100px;
     padding: 10px;
     margin:10px;
-    background: #2C3E50;
+    background: var(--lighter-grey);
     text-align: center;
-    color:#ECF0F1;
+    color: var(--ice-blue);
     border: 10px;
-    border-radius:20px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
     text-decoration: none;
 }
+
 /* Changes that occur on hover */
 .Navigation:hover{
-    background: #3498DB;
+    background: var(--lighter-blue);
     /* box-shadow: 5px 5px 5px grey; looks lame */
 }
-
-/* .Navigation: */
 
 .Navigation_Bar{
     display: flex;
     width: 100%;
-    justify-content: end;
-    background-color: #ECF0F1;
+    justify-content: center;
+    /* background-color: var(--dark-grey); */
+}
+
+#programming {
+    animation: fadeIn 5s;
+    animation-delay: 1s;
+}
+
+
+#mechanical{
+    animation: fadeIn 5s;
+    animation-delay: 2s;
+}
+
+
+#hobbies{
+    animation: fadeIn 5s;
+    animation-delay: 3s;
 }
