@@ -40,8 +40,8 @@ body{
   }
 
 .title-container {
-    padding: 40%;
-    padding-bottom: 30%;
+    padding: 25%;
+    padding-bottom: 25%;
     animation: fadeIn 10s;
     text-align: center;
 }
