@@ -66,7 +66,7 @@ body{
 
 .subpage-title-container{
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 25% 15% 20% 15% 25%;
     width: 100%;
     justify-items: center;
     align-items: center;
@@ -77,3 +77,15 @@ body{
 }
 
 
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+.typing{
+    display: flex;
+    grid-column: 3;
+    width: 100%;
+    animation:typing 3s steps(30);
+    overflow: hidden;
+}
