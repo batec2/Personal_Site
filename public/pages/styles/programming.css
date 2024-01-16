@@ -10,28 +10,13 @@ darker blue #2980B9
 */
 /* https://fonts.google.com/specimen/Inter?query=inter */
 /*Variables with a global scope */
-:root {
-    /* pallet 1 */
-    --blue-grey: #2c3e50;
-    --red-orange: #E74C3C;
-    --ice-blue: #ECF0F1;
-    --lighter-blue: #3498DB;
-    --darker-blue: #2980B9;
-    /* pallet 2 */
-    --dark-red: #200E0B;
-    --dark-grey: #333634;
-    --lighter-grey: #585958;
-    --light-grey: #D4D6D6;
-    --red: #DC1A00;
-}
-
 body{
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--ice-blue);
-    background-color: black;
+    color: var(--text);
+    background-color: var(--primary);
 }
 
 .program-container{
@@ -43,8 +28,9 @@ body{
     padding: 5px;
     margin: 5px;
     border-style: solid;
-    border-color: var(--lighter-grey);
-    border-width: 1px;
+    border-color: var(--borders);
+    border-width: 2px;
+    background-color: var(--secondary);
     /* background-color: #2980B9; */
 }
 
@@ -58,11 +44,9 @@ body{
     flex-direction: column;
 }
 
-.description{
-}
 .program-image{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     margin: 10px;
 }
