@@ -35,7 +35,8 @@ darker blue #2980B9
     --secondary: var(--color-4);
     --borders:var(--color-3);
     --text:var(--color-2);
-
+    --buttons:var(--color-4);
+    --buttons-hover:var(--color-1);
 }
 
 body{
@@ -63,7 +64,7 @@ body{
     width: 100px;
     padding: 10px;
     margin:10px;
-    background: var(--secondary);
+    background: var(--buttons);
     text-align: center;
     border: 10px;
     border-bottom-right-radius: 10px;
@@ -74,7 +75,7 @@ body{
 
 /* Changes that occur on hover */
 .Navigation:hover{
-    background: var(--color-1);
+    background: var(--buttons-hover);
     /* box-shadow: 5px 5px 5px grey; looks lame */
 }
 
@@ -102,4 +103,16 @@ body{
     opacity: 0;
     animation: fadeIn 2s forwards;
     animation-delay: 3s;
+}
+
+.Id-Container{
+    display: flex;
+    justify-content: center;
+}
+
+.Profile-Links{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 10px;
 }

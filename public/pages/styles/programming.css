@@ -10,6 +10,14 @@ darker blue #2980B9
 */
 /* https://fonts.google.com/specimen/Inter?query=inter */
 /*Variables with a global scope */
+
+:root {
+    --color-4:#3B424D32;
+    --color-3:#306E7332;
+    --secondary: var(--color-4);
+    --borders:var(--color-3);
+}
+
 body{
     font-family: 'Inter', sans-serif;
     display: flex;
@@ -67,4 +75,5 @@ body{
 .Back-Button{
     width: 50px;
 }
+
 
