@@ -30,7 +30,7 @@
 }
 
 body{
-    min-height: 100%;
+    min-height: 100vh;
     font-family: 'Inter', sans-serif;
     color: var(--text);
     display: flex;
@@ -54,10 +54,13 @@ body{
 .Navigation{
     padding: 10px;
     margin:10px;
-    background: var(--buttons);
     text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--text);
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
+    background: var(--buttons);
     text-decoration: none;
     color: var(--text);
 }
@@ -81,21 +84,21 @@ body{
 #projects {
     opacity: 0;
     animation: fadeIn 1s forwards; /*forwards keeps the final frame opacity */
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 
 #mechanical{
     opacity: 0;
     animation: fadeIn 1s forwards;
-    animation-delay: 2s;
+    animation-delay: 1.25s;
 }
 
 
 #hobbies{
     opacity: 0;
     animation: fadeIn 1s forwards;
-    animation-delay: 3s;
+    animation-delay: 1.75s;
 }
 
 .Id-Container{
